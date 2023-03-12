@@ -24,22 +24,6 @@ function createGalleryMarkup (items) {
 const addGalleryMarkup = createGalleryMarkup(galleryItems);
 divRef.innerHTML = addGalleryMarkup;
 
-// divRef.addEventListener("click", onImageClick);
-
-// function onImageClick (e) {n
-//     blockStandardAction(e);
-//     if (e.target.nodeName !== "IMG") { return;}
-
-
-// //     const instance = basicLightbox .create (`
-// //     <img src = "${e.target.dataset.source}" width = "800" height = "600">`);
-// //     instance.show();
-
-// // divRef.addEventListener("keydown", (e) => {if (e.code === 'Escape'){
-// //     instance.close();
-// // }});
-
-// }
 
 function blockStandardAction (e) {
     e.preventDefault();
