@@ -1,5 +1,6 @@
 import throttle from 'lodash.throttle';
 
+form = document.querySelector('.feedback-form');
 
 const STORAGE_KEY = 'feedback-form-state';
 let formData = JSON.parse(localStorage.getItem(STORAGE_KEY))||{};
@@ -7,11 +8,8 @@ const {email, message} = form.elements;
 reloadPage();
 
 
-
- form = document.querySelector('.feedback-form');
-
-refs.form.addEventListener('submit', onFormSubmit);
-refs.textarea.addEventListener('input', throttle(onTextareaInput, 500));
+form.addEventListener('submit', onFormSubmit);
+form.addEventListener('input', throttle(onTextareaInput, 500));
 
 
 
