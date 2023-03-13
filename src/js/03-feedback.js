@@ -8,8 +8,7 @@ reloadPage();
 
 
 
- form = document.querySelector('.feedback-form'),
-;
+ form = document.querySelector('.feedback-form');
 
 refs.form.addEventListener('submit', onFormSubmit);
 refs.textarea.addEventListener('input', throttle(onTextareaInput, 500));
