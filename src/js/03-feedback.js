@@ -9,7 +9,7 @@ reloadPage();
 
 
 form.addEventListener('submit', onFormSubmit);
-form.addEventListener('input', throttle(onTextareaInput, 500));
+form.addEventListener('input', throttle(onInputFormValue, 500));
 
 
 
