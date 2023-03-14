@@ -28,3 +28,8 @@ divRef.innerHTML = addGalleryMarkup;
 function blockStandardAction (e) {
     e.preventDefault();
 }
+
+const lightbox = new SimpleLightbox('.gallery a', {
+ captionDate: 'alt',
+ captionDelay: 250, 
+})
